@@ -33,3 +33,15 @@ kong_bandwidth{type="egress",service="yahoo"} 297
 To take a snapshot of these metrics, once can `curl` the endpoint where they are actively exposed, and save it as a file.
 For use with OpenMimic, this could looks like `curl <ip_of_my_service>:<port>/<route> >> desired_output.txt`
 A metric collector (such as any openmetrics based Datadog integration) could then be configured to point at the OpenMimic endpoint for live testing of configurations. 
+
+
+
+
+
+```
+init_config:
+
+instances:
+  - openmetrics_endpoint: http://localhost:8888/metrics/
+ 
+```
