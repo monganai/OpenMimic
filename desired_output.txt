@@ -39,3 +39,5 @@ kong_memory_lua_shared_dict_bytes{shared_dict="kong_locks"} 61440
 kong_memory_lua_shared_dict_bytes{shared_dict="kong_process_events"} 45056
 kong_memory_lua_shared_dict_bytes{shared_dict="kong_rate_limiting_counters"} 86016
 kong_memory_lua_shared_dict_bytes{shared_dict="prometheus_metrics"} 49152
+
+
